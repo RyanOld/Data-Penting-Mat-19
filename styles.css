@@ -1,13 +1,130 @@
-/* * {
-  margin : 0 auto;
-} */
-/*Scripting Needs
+/*Variables for Keyframes Height(Temp)
+----------------------------------------*/
+:root {
+  --probab : xpx;
+  --geoa : ypx;
+  --prokom : zpx;
+  --kalut : apx;
+}
+/*Scripting Needs and Keyframes
 ----------------------------------------*/
 .hidden {
   height: 0;
   overflow : hidden;
 }
+.minimized1 {
+  overflow : hidden;
+  animation : probab-hiding 1s ease-in-out;
+  /* animation :  1s linear; */
+  height : 0;
+}
+.expanded1 {
+  overflow : hidden;
+  animation : probab-expanding 1s ease-in-out;
+  height : var(--probab);
+}
+.minimized2 {
+  overflow : hidden;
+  animation : geoa-hiding 1s ease-in-out;
+  /* animation :  1s linear; */
+  height : 0;
+}
+.expanded2 {
+  overflow : hidden;
+  animation : geoa-expanding 1s ease-in-out;
+  height : var(--geoa);
+}
+.minimized3 {
+  overflow : hidden;
+  animation : prokom-hiding 1s ease-in-out;
+  /* animation :  1s linear; */
+  height : 0;
+}
+.expanded3 {
+  overflow : hidden;
+  animation : prokom-expanding 1s ease-in-out;
+  height : var(--prokom);
+}
+.minimized4 {
+  overflow : hidden;
+  animation : kalut-hiding 1s ease-in-out;
+  /* animation :  1s linear; */
+  height : 0;
+}
+.expanded4 {
+  overflow : hidden;
+  animation : kalut-expanding 1s ease-in-out;
+  height : var(--kalut);
+}
 
+
+@keyframes probab-hiding {
+  from {
+    height : var(--probab);
+  }
+  to {
+    height : 0;
+  }
+}
+@keyframes probab-expanding {
+  from {
+    height : 0;
+  }
+  to {
+    height : var(--probab);
+  }
+}
+
+@keyframes geoa-hiding {
+  from {
+    height : var(--geoa);
+  }
+  to {
+    height : 0;
+  }
+}
+@keyframes geoa-expanding {
+  from {
+    height : 0;
+  }
+  to {
+    height : var(--geoa);
+  }
+}
+
+@keyframes prokom-hiding {
+  from {
+    height : var(--prokom);
+  }
+  to {
+    height : 0;
+  }
+}
+@keyframes prokom-expanding {
+  from {
+    height : 0;
+  }
+  to {
+    height : var(--prokom);
+  }
+}
+
+@keyframes kalut-hiding {
+  from {
+    height : var(--kalut);
+  }
+  to {
+    height : 0;
+  }
+}
+@keyframes kalut-expanding {
+  from {
+    height : 0;
+  }
+  to {
+    height : var(--kalut);
+  }
+}
 /*Page-Wide Styling
 ----------------------------------------*/
 body {
@@ -20,7 +137,7 @@ body {
 h1, h2, h3, h4 {
   margin : 0 auto;
 }
-/*Title
+/*Titles
 ----------------------------------------*/
 .main-header h1 {
   background : #191919;
@@ -41,9 +158,6 @@ h3 {
 h4 {
   font-weight : 600;
 }
-/* li {
-  margin : 0.3rem auto;
-} */
 .meet li {
   margin : 0.4rem auto;
 }
@@ -60,13 +174,10 @@ h4 {
 .subject-title {
   padding : 0.5rem;
   margin : 0 auto;
-  /* height : 1rem; */
-  /* color : #F3E5E5; */
 }
 .subject-title a {
   color : #F3E5E5;
   text-decoration: none;
-  /* margin : 0 auto; */
 }
 /*Lists
 ----------------------------------------*/
@@ -80,8 +191,6 @@ ol {
   color : ivory;
   text-decoration: none;
   margin : 0 auto;
-  /* margin-top : 1rem; */
-  /* margin: 5rem auto; */
   padding : 0.2rem;
   background : #555;
   border-radius: 0.3rem;
@@ -107,7 +216,6 @@ ol {
   color : ivory;
   text-decoration: none;
   margin : 0 auto;
-  /* margin: 5rem auto; */
   padding : 0.2rem;
   background : #555;
   border-radius: 0.3rem;
