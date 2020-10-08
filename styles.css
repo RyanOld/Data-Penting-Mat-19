@@ -161,6 +161,15 @@ h4 {
 .meet li {
   margin : 0.4rem auto;
 }
+header p {
+  /* margin : 0 auto; */
+  background : #191919;
+  text-align : center;
+  padding-bottom : 0.6rem;
+}
+header p:hover {
+  opacity : 0.8;
+}
 /*Main Content Container
 ----------------------------------------*/
 .main-container {
