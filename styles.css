@@ -179,6 +179,9 @@ h4 {
   color : #F3E5E5;
   text-decoration: none;
 }
+.subject-title a:hover {
+  opacity: 0.8;
+}
 /*Lists
 ----------------------------------------*/
 ol {
@@ -194,6 +197,9 @@ ol {
   padding : 0.2rem;
   background : #555;
   border-radius: 0.3rem;
+}
+.subject a:hover {
+  opacity : 0.7;
 }
 .note {
   margin : 0 auto;
